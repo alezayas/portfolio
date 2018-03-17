@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ale Zayas</title>
+  <meta name="description" content="Ale Zayas Frontend Dev">
+  <meta name="author" content="Ale Zayas">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="logo">
+        <svg width="48px" height="55px" viewBox="0 0 48 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+            <desc>Created with Sketch.</desc>
+            <defs></defs>
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Desktop-HD" transform="translate(-305.000000, -42.000000)" fill-rule="nonzero" fill="#000000">
+                    <g id="noun_763027_cc" transform="translate(305.000000, 42.000000)">
+                        <g id="Group">
+                            <path d="M23.9999994,1.38950518e-13 L0,13.7498106 L0,41.2501894 L0.794802005,41.7058948 L23.9999994,55 L48,41.2501894 L48,13.7498106 L23.9999994,0 L23.9999994,1.38950518e-13 Z M23.9999994,4.64132571 L33.5860363,18.7119084 L14.4139625,18.7119084 L23.9999994,4.64132571 Z M18.8115091,6.6189415 L10.9293639,18.1883697 L4.773586,14.6618935 L18.8115091,6.6189415 Z M29.1892453,6.6189415 L43.2264128,14.661099 L37.0714306,18.1875752 L29.1892453,6.6189415 L29.1892453,6.6189415 Z M3.18239067,17.3957589 L9.33892418,20.9222963 L3.18239067,33.4816873 L3.18239067,17.3957589 Z M44.8176081,17.3957589 L44.8176081,33.4824818 L38.6610346,20.9222963 L44.8168124,17.3957589 L44.8176081,17.3957589 Z M14.1738907,21.8690903 L33.8261081,21.8690903 L23.9999994,38.7583239 L14.1738907,21.8690903 L14.1738907,21.8690903 Z M11.5377175,23.654695 L21.1245106,40.1306955 L4.05178042,38.9279683 L11.5377175,23.654695 L11.5377175,23.654695 Z M36.4622813,23.654695 L43.9489746,38.9279683 L26.8762838,40.1306955 L36.4622813,23.654695 L36.4622813,23.654695 Z M8.36928967,42.3981612 L22.4088041,43.3880996 L22.4088041,50.4419076 L8.36928967,42.3981612 Z M39.6314647,42.3981612 L25.5911947,50.4419076 L25.5911947,43.3880996 L39.6314647,42.3981612 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+      </div>
+      <div class="main-nav">
+        <a href="#">About</a>
+        <a class="btn" href="mailto:zayasvm@gmail.com">Contact</a>
+      </div>
+    </nav>
+    <section class="main">
+      <div class="main-left">
+        <h3>Hi, I'm Ale</h3>
+        <h1>Front-end Developer</h1>
+        <h3>Projects coming soon!</h3>
+        <ul class="skills">
+          <li>
+            <img src="img/html.svg" alt="html5">
+          </li>
+          <li>
+            <img src="img/css3.svg" alt="css3">
+          </li>
+          <li>
+            <img src="img/javascript.svg" alt="javascript">
+          </li>
+          <li>
+            <img src="img/vue.svg" alt="vue js">
+          </li>
+          <li>
+            <img src="img/sketch.svg" alt="sketch app">
+          </li>
+          <li>
+            <img src="img/photoshop.svg" alt="photoshop">
+          </li>
+        </ul>
+      </div>
+      <div class="main-right">
+        <form id="#app" action="">
+          {{ message }}
+          <h2>Get in touch</h2>
+          <label for="user_name">Name</label>
+          <input type="text" name="user_name" id="user_name" placeholder="Name" required>
+          <label for="user_email">Email</label>
+          <input type="email" name="user_email" id="user_email" placeholder="Email" required>
+          <label for="user_text">Tell me about you</label>
+          <textarea name="user_text" id="user_text" placeholder="Tell me about you..." rows="8" cols="80" required></textarea>
+          <button type="submit" name="button" id="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>d20 dice by Andrew Doane from the Noun Project</p>
+    </footer>
+    
+  </div>
+</body>
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'hello'
+    }
+  })
+</script>
+</html>
